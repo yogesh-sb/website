@@ -81,40 +81,8 @@
   <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center">
     <div class="container d-flex flex-column align-items-center position-relative" data-aos="zoom-out">
       <h2><span>Yogesh Bhattarai</span></h2>
-      <p><span id="changingRole" class="role"></span></p>
-      <script>
-        const roles = ["Climate","Water","Flood","Infrastructure Resilience","Machine Learning"];
-        const colors = ["#00008B"]; // Colors for each role
-        const roleElement = document.getElementById("changingRole");
-        let currentRoleIndex = 0;
-        let currentCharIndex = 0;
-
-        function typeRole() {
-            const currentRole = roles[currentRoleIndex];
-            if (currentCharIndex < currentRole.length) {
-                roleElement.textContent += currentRole.charAt(currentCharIndex);
-                currentCharIndex++;
-                setTimeout(typeRole, 100); // Delay between each character (adjust as needed)
-            } else {
-                setTimeout(eraseRole, 1000); // Delay before erasing (adjust as needed)
-            }
-        }
-
-        function eraseRole() {
-            if (roleElement.textContent.length > 0) {
-                roleElement.textContent = roleElement.textContent.slice(0, -1);
-                setTimeout(eraseRole, 100); // Delay between erasing each character (adjust as needed)
-            } else {
-                currentCharIndex = 0;
-                currentRoleIndex = (currentRoleIndex + 1) % roles.length;
-                roleElement.style.color = colors[currentRoleIndex]; // Change the color for each role
-                typeRole();
-            }
-        }
-
-        // Start the typing animation
-        typeRole();
-      </script>
+      <p><span> Water | AI | Climate</span></p>
+      
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
       </div>
