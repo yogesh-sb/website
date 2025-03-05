@@ -1,0 +1,32 @@
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme a {
+    color: #bb86fc;
+}
+
+body.dark-theme .header, 
+body.dark-theme .footer {
+    background-color: #1c1c1c;
+}
+
+body.dark-theme .btn-get-started {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
+body.dark-theme .btn-get-started:hover {
+    background-color: #9f67df;
+}
+
+body.dark-theme .nav-link {
+    color: #ffffff;
+}
+
+body.dark-theme .service-item, 
+body.dark-theme .about-img {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
